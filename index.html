@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+<head>
+<title>Nicholas Stout</title>
+	<meta charset="utf-8" />
+	<meta name="description" content="Nicholas Stout" />
+	<meta name="keywords" content="Nicholas Stout" />
+	<meta name="author" content="Nicholas Stout" />
+	<meta name="robots" content="index, follow">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<link rel="stylesheet" href="ok.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="resume.pdf" type="text/css" media="screen" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+</head>
+<body>
+
+<main class="container">
+	<section class="content">
+		<h1>Nicholas Stout</h1>
+		<p id="Description"></p>
+		<a href="resume.pdf" title="Résumé">Résumé</a>
+        
+	</section>
+</main>
+
+<footer>
+	<a class="LinkedIn" href="https://www.linkedin.com/in/paul-allen-439b281a4/" title=""><i class="fab fa-linkedin"></i></a>
+    <a class="GitHub" href="https://github.com/NickJStout" title=""><i class="fab fa-github"></i></a>
+</footer>
+
+<script>
+var showText = function (target, message, index, interval) {
+	if (index < message.length) {
+		$(target).append(message[index++]);
+		setTimeout(function () { showText(target, message, index, interval); }, interval);}}
+
+$(function () {showText("#Description", "Welcome to my website ", 0, 80);});
+    
+</script>
+</body>
+</html>
